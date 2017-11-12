@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_weather_result"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.shauryamittal.breezy.WeatherResult">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_city"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17">
+
+            <TextView
+                android:text="--"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result_temp"
+                android:textSize="50sp"
+                android:textAlignment="viewStart"/>
+
+            <TextView
+                android:text="°F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result_unit"
+                android:layout_weight="1"
+                android:textSize="42sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:text="--"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/result_low"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:text="Low"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView6"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="--"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result_high"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:text="High"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp1"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition1"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr1"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp2"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition2"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr2"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp3"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition3"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr3"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp4"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition4"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr4"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp5"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition5"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr5"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp6"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition6"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr6"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp7"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition7"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr7"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:text="t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrtemp8"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition8"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="hr8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hr8"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
